@@ -1,0 +1,338 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+	<title>conteúdo</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body{
+			background: url(fundo.jpg);
+		}
+
+		#layout{
+			font-family: "trebuchet MS", helvetica, sans-serif;
+			background: #f2f2f2;
+			/*layout liquido utilizam %*/
+			width:90%;
+			margin: 0 auto;
+			background: #fff;
+			min-width:550px;
+		}
+
+		#marca{
+			height:200px;
+			background: #225992 url(cabecalho2.jpg) no-repeat center ;
+			text-align: center;
+			line-height: 200px;
+		}
+		#conteudo{
+			width: 74.28%;
+			float: right;
+		}
+
+		#navegacao{
+			width: 23%;
+			float: left 20px;
+			padding-top: 20px;
+			padding-bottom: 20px
+			min-height: 300px;
+		}
+
+		#rodape{
+			clear: both;
+			background: #c4c4c4;
+			padding: 5px; 
+		}
+
+		#conteudo-principal{
+			width: 62%;
+			float: left;
+		}
+
+		#conteudo-secundario{
+			width: 33%;
+			float: right;
+			background: #d1d1d1;
+			padding: 10px;
+		}
+/* para fazer a imagem diminur junto com a tela sem cortar nada */
+		img.img-noticia{
+			width: 90%;
+			padding: 2%;
+		}
+
+		#table{
+			width: 500px;
+		}
+
+		th, td{
+			border-collapse: collapse;
+			padding: 20px;
+		}
+
+		th{
+			/*uppercase deixa todas as letras maíusculas*/
+			text-transform: uppercase;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #111;
+			text-align: left;
+			letter-spacing: 0.1em;
+		}
+
+		tr.alternado{
+			background: #efefef;
+		}
+
+		.numero{
+			text-align: right;
+
+		}
+
+		th:hover{
+			background: grey;
+		}
+
+		td:hover{
+			background: lightgrey;
+		}
+
+		fieldset{
+			margin: 1em 0;
+			padding: 1em;
+			border: 1px solid #ccc;
+			background: #f8f8f8;
+		}
+		label{
+			display: block;
+			cursor: pointer;
+		}
+		input [type="text"]{
+			width: 20em;
+		}
+
+		textarea{
+			width: 20em;
+			height: 10em;
+		}
+
+		#form{
+			width: 20em;
+			height: 10em;
+			background-color: rgba(255, 255, 255,0.3);
+			-webkit-border-radius:10px;
+			-moz-border-radius:10px;
+			border-radius:10px;
+			margin: 0 auto;
+			margin-top: 120px;
+
+		}
+
+		#form img{
+			width: 90px;
+			height: 90px;
+			margin-top: -60px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		#form input{
+			height: 40px;
+			width: 80%;
+			font-size: 18px;
+			margin-bottom: 10px;
+			background-color: #fff;
+			padding-left: 40px;
+			background-repeat: no-repeat;
+			background-position: 10px;
+
+		}
+
+		input.email{
+			background-image: url(icone-usuario.png) ;
+		}
+
+		input.senha{
+			background-image: url(icone-cadeado.png) ;
+		}
+
+		input.submit{
+			background-image:url(aba-direita.png);
+			color: white;
+			border:2px solid #db7d00;
+			
+		}
+
+
+
+		</style>
+
+</head>
+
+<body>
+
+	<!-- LAYOUT fixo -->
+	<div id="layout">
+
+		<div id="marca">Marca</div>
+		<div id="conteudo">
+
+			<div id="conteudo-principal">
+				<h2>Conteúdo</h2>
+
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				</p>
+				<!--estilizando tabelas -->
+				<div>
+
+					<table id="table">
+
+						<tr>
+							<th>código</th>
+							<th>produto</th>
+							<th class="numero">preço</th>
+						</tr>
+
+						<tr>
+							<td> 001</td>
+							<td> nootbook</td>
+							<td class="numero">R$2.500</td>
+						</tr>
+
+						<tr class="alternado">
+							<td> 002</td>
+							<td> roteador</td>
+							<td class="numero">R$ 500</td>
+						</tr>
+
+						<tr>
+							<td> 003</td>
+							<td> celular</td>
+							<td class="numero"> R$2.000</td>
+						</tr>
+
+						<tr class="alternado">
+							<td> 004</td>
+							<td> carregador</td>
+							<td class="numero"> R$100</td>
+						</tr>
+						
+					</table>
+				</div>
+
+			</div>	
+
+			<div id="conteudo-secundario">
+				<h2>Conteúdo secundário</h2>
+
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+				</p>
+
+								<!--Estilizando formulários -->
+
+					<div>
+						<form>
+				<!-- fieldset utilizados para separar dados semelhantes -->
+							<fieldset>
+								<legend>Detalhes de contato</legend>
+
+								<div>
+									<label for="nome">Nome:</label>
+									<input type="text" name="nome" id="nome"><br>
+
+									<label for="email">email:</label>
+									<input type="text" name="email" id="email"><br>
+
+									<label for="url">url  :</label>
+									<input type="text" name="url" id="url">
+
+								</div>
+								
+							</fieldset>
+
+							<fieldset>
+
+								<legend>Comentário</legend>
+
+								<div>
+									<label for="mensagem">Mensagem:</label>
+
+									<textarea name="mensagem" id="mensagem"></textarea>
+								</div>
+
+							</fieldset>
+
+							<fieldset>
+								<legend>Lembrar de mim</legend> 
+
+								<div>
+									<label>
+										<input type="radio" name="lembrar" id="sim"> sim
+									</label>
+								</div>
+
+								<div>
+									<label>
+										<input type="radio" name="lembrar" id="nao"> não
+									</label>
+								</div>
+
+							</fieldset>
+
+						</form>
+
+						
+					</div>
+
+
+			</div>
+			
+
+		</div>
+		<div id="navegacao">
+
+			<ul>
+				<li><a href="">Ir ao dentista</a></li>
+				<li><a href="">Ir ao mercado</a></li>
+				<li> <a href="">Fazer almoço</a></li>
+				<li ><a href="">Assistir série</a></li>
+				<li><a href="">Estudar</a></li>
+			</ul>
+
+			<div id="form">
+
+				<img src="perfil.png">
+
+				<form>
+					<div>
+						<input type="text" name=" email" id="email" placeholder="Digite seu e-mail" class=" email">
+					</div>
+
+					<div>
+						<input type="password" name=" senha" id="email" placeholder="Digite sua senha" class="senha">
+					</div>
+
+					<div>
+						<input type="submit" name="logar" class="submit">
+					</div>
+				</form>
+				
+			</div>
+
+		</div>
+		<div id="rodape">rodape</div>
+		
+	</div>
+
+	
+	
+</body>
+
+</html>
+
+
+		
+
+	
