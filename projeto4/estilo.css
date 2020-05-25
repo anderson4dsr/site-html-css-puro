@@ -1,0 +1,132 @@
+header{ 
+ background-image: url(fundo.png);
+ width: 99%;
+ height: 230px;
+ min-width: 1350px;
+} 
+
+#conteudo{
+	width: 99%;
+	min-width: 1350px;
+}
+
+#logo{
+	margin-top: 20px;
+	margin-left: 260px;
+	width: 12%;
+}
+
+#brasil{
+	position: absolute;
+	right: 250px;
+	width: 12%;
+	top: 10px;
+
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+	padding:20px;
+	position: relative;
+	top: 45px;
+	left: 260px;
+	background:#DC143C;
+	margin: -2px;
+}
+
+
+
+header a:hover{
+	background:#F08080;
+}
+
+
+
+#esquerda{
+	width: 15%;
+	float:left;
+	margin-top: 10px;
+	margin-left: 250px;
+}
+
+#esquerda a{
+	text-decoration: none;
+}
+
+#esquerda ul{
+	list-style-type:none;
+	display: block;
+
+	
+}
+
+#esquerda li{
+	display: block;
+	list-style-type: disc;
+	padding: 20px;
+	font-size: 20px;
+	text-align: left;	
+}
+
+#esquerda li:hover{
+	background: #DC143C;
+}
+
+#meio{
+	width:25%
+	float:right;
+	margin: 10px;
+	margin-right: 620px;
+	max-width: 260px;
+}
+
+#direita{
+	width:25%
+	float: right;
+	margin: 10px;
+	margin-right: 340px;
+	margin-top:-742px;
+	max-width: 260px;
+	position: relative;
+}
+
+#rodape{
+	clear: both;
+	text-align: center;
+}
+
+h2{
+	background:#4169E1;	
+	text-align: center;
+}
+h4{
+	background:#DC143C;
+	width:153px;
+}
+h3{
+	background:#DC143C;
+	width:132px;
+}
+
+#meio a{
+	color: #DC143C;
+}
+
+#direita a{
+	color: #DC143C;
+}
+
+#logar{
+	background: #DC143C;
+	color: white;
+	width: 100px;
+	height: 50px;
+	margin-top: 2px;
+}
+
+#email{
+	width:200px;
+	height:30px;
+}
+
